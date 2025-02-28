@@ -1,0 +1,51 @@
+﻿<Window x:Class="математика.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:математика"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Игровое поле -->
+        <UniformGrid Grid.Row="0" Rows="5" Columns="5" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button Name="Cell00" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell01" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell02" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell03" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell04" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell10" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell11" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell12" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell13" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell14" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell20" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell21" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell22" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell23" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell24" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell30" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell31" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell32" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell33" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell34" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell40" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell41" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell42" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell43" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+            <Button Name="Cell44" Click="Cell_Click" Content="" Width="50" Height="50" Margin="5"/>
+        </UniformGrid>
+
+        <!-- Панель управления -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <TextBlock Text="Текущее число: " FontSize="16" VerticalAlignment="Center"/>
+            <TextBlock Name="CurrentNumberText" Text="?" FontSize="16" FontWeight="Bold" Margin="5"/>
+            <Button Content="Игрок" Click="PlayerTurn_Click" Width="80" Margin="10"/>
+        </StackPanel>
+    </Grid>                                      
+</Window>
