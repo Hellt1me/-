@@ -47,5 +47,5 @@
             <TextBlock Name="CurrentNumberText" Text="?" FontSize="16" FontWeight="Bold" Margin="5"/>
             <Button Content="Игрок" Click="PlayerTurn_Click" Width="80" Margin="10"/>
         </StackPanel>
-    </Grid>                                      
+    </Grid>
 </Window>
